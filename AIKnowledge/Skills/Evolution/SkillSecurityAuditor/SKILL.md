@@ -1,34 +1,9 @@
 ---
-name: 技能安全审计
-identifier: SkillSecurityAuditor
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 技能安全
-  - 安全审计
-  - 风险评估
-  - 元技能
-  - 合规检查
+name: SkillSecurityAuditor
+description: 技能安全审计专家，负责审计技能权限和访问控制配置、检测代码安全漏洞（注入攻击、敏感信息泄露、权限越界）、验证技能操作合规性（数据保护、隐私政策）、评估安全风险等级（低/中/高/严重）、提供安全加固建议和修复方案，适用于安全审查、合规检查、风险评估、安全加固场景
 ---
 
 # 技能安全审计
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能安全审计 |
-| **英文标识名** | `SkillSecurityAuditor` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -957,41 +932,3 @@ false_positive_whitelist:
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本，包含完整的安全审计能力 |
 | 1.0.1 | 2026-03-31 | AI Assistant | 扩充安全审计策略引擎、输入输出规范、错误处理等章节 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.1  
-**状态**: 🟢 稳定
-
-## 🔗 相关资源
-
-### 前置技能
-- [SkillQualityGate](../SkillQualityGate/SKILL.md) - 技能质量门禁
-- [SkillMetrics](../SkillMetrics/SKILL.md) - 技能度量与分析
-
-## 📝 更新日志
-
-| 版本 | 日期 | 作者 | 变更内容 |
-|------|------|------|---------|
-| 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

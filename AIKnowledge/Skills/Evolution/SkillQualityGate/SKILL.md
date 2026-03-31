@@ -1,34 +1,9 @@
 ---
-name: 技能质量门禁
-identifier: SkillQualityGate
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 技能质量
-  - 质量门禁
-  - 技能审查
-  - 元技能
-  - 质量保障
+name: SkillQualityGate
+description: 技能质量门禁专家，负责定义技能质量标准和检查清单（完整性、准确性、性能、安全性）、执行技能发布前的质量门禁检查并生成评分、定期审查技能质量并识别质量问题、提供质量改进建议和预警，适用于技能发布审查、质量评估、合规检查、持续改进场景
 ---
 
 # 技能质量门禁
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能质量门禁 |
-| **英文标识名** | `SkillQualityGate` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -478,16 +453,3 @@ skill-quality-gate review --skill=NewSkill --mode=pre-release
 | 版本 | 日期 | 作者 | 变更内容 |
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本，包含完整的技能质量门禁能力 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

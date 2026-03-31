@@ -1,34 +1,9 @@
 ---
-name: 技能测试与验证
-identifier: SkillTesting
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 技能测试
-  - 质量验证
-  - 单元测试
-  - 元技能
-  - 测试自动化
+name: SkillTesting
+description: 技能测试与验证专家，负责为技能生成单元测试和集成测试（覆盖率≥80%）、验证技能输出质量和一致性、执行回归测试确保向后兼容、进行性能测试和负载测试、生成测试报告和覆盖率分析，适用于新技能测试、发布前验证、回归测试、性能基准测试场景
 ---
 
 # 技能测试与验证
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能测试与验证 |
-| **英文标识名** | `SkillTesting` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -847,41 +822,3 @@ functions:
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本，包含完整的技能测试与验证能力 |
 | 1.0.1 | 2026-03-31 | AI Assistant | 扩充测试策略引擎、输入输出规范、错误处理等章节 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.1  
-**状态**: 🟢 稳定
-
-## 🔗 相关资源
-
-### 前置技能
-- [SkillQualityGate](../SkillQualityGate/SKILL.md) - 技能质量门禁
-- [SkillMetrics](../SkillMetrics/SKILL.md) - 技能度量与分析
-
-## 📝 更新日志
-
-| 版本 | 日期 | 作者 | 变更内容 |
-|------|------|------|---------|
-| 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

@@ -1,34 +1,9 @@
 ---
-name: 技能上下文管理器
-identifier: SkillContextManager
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 上下文管理
-  - 状态管理
-  - token 优化
-  - 元技能
-  - 长期记忆
+name: SkillContextManager
+description: 技能上下文管理专家，负责管理技能执行上下文状态和会话记忆、优化 token 使用（摘要生成、记忆压缩、上下文窗口管理）、支持长期记忆和跨会话状态保持、处理上下文溢出和切换、实现智能摘要和关键信息保留，适用于长对话管理、多轮会话、上下文优化、记忆持久化场景
 ---
 
 # 技能上下文管理器
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能上下文管理器 |
-| **英文标识名** | `SkillContextManager` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -386,41 +361,3 @@ skill-context-manager optimize --threshold=70
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
 | 1.0.1 | 2026-03-31 | AI Assistant | 扩充上下文管理策略引擎等章节 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.1  
-**状态**: 🟢 稳定
-
-## 🔗 相关资源
-
-### 前置技能
-- [SkillMetrics](../SkillMetrics/SKILL.md) - 技能度量与分析
-- [SkillPerformanceOptimizer](../SkillPerformanceOptimizer/SKILL.md) - 技能性能优化器
-
-## 📝 更新日志
-
-| 版本 | 日期 | 作者 | 变更内容 |
-|------|------|------|---------|
-| 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

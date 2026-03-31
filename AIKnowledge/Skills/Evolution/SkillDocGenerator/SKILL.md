@@ -1,34 +1,9 @@
 ---
-name: 技能文档生成器
-identifier: SkillDocGenerator
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 文档生成
-  - 自动化文档
-  - 技能文档
-  - 元技能
-  - 文档管理
+name: SkillDocGenerator
+description: 技能文档生成专家，负责从技能定义自动生成 API 文档（参数说明、返回值、错误码）、生成使用示例和教程（入门指南、进阶指南、最佳实践）、支持多语言文档生成和翻译、管理文档版本与技能版本同步、生成交互式文档和演示，适用于文档自动化、多语言支持、版本管理、教程生成场景
 ---
 
 # 技能文档生成器
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能文档生成器 |
-| **英文标识名** | `SkillDocGenerator` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -1424,16 +1399,3 @@ def generate_with_retry(skill_definition, max_retries=3):
 | 版本 | 日期 | 作者 | 变更内容 |
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本，包含完整的文档生成策略、质量门禁、错误处理等 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

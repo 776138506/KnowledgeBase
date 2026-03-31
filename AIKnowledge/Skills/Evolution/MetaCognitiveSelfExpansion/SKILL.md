@@ -1,34 +1,9 @@
 ---
-name: 元认知与自我扩展
-identifier: MetaCognitiveSelfExpansion
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-30
-updated: 2026-03-30
-author: AI Assistant
-tags:
-  - 元认知
-  - 自我扩展
-  - 智能决策
-  - 任务规划
-  - 能力进化
+name: MetaCognitiveSelfExpansion
+description: 元认知与自我扩展专家，负责主动识别重复性任务模式（高频多步骤任务）并建议创建 Skill、识别可独立拆分的子任务（低耦合高内聚）并建议创建 Subagent、识别外部系统交互需求（工具/API/数据源）并建议引入 MCP、在执行任务过程中动态监控并主动提出能力扩展建议，适用于能力边界识别、自动化建议、任务优化、系统扩展场景
 ---
 
 # 元认知与自我扩展
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 元认知与自我扩展 |
-| **英文标识名** | `MetaCognitiveSelfExpansion` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-30 |
-| **最后更新** | 2026-03-30 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -1114,17 +1089,3 @@ auto_mode:
 |------|------|------|---------|
 | 1.0.0 | 2026-03-30 | AI Assistant | 初始版本，包含完整的元认知与自我扩展能力 |
 | 0.9.0 | 2026-03-29 | AI Assistant | 测试版本，添加核心决策引擎 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)  
-**文档**: [完整文档](链接)
-
----
-
-**创建日期**: 2026-03-30  
-**最后更新**: 2026-03-30  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

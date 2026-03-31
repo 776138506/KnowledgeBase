@@ -1,34 +1,9 @@
 ---
-name: 技能性能优化器
-identifier: SkillPerformanceOptimizer
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 性能优化
-  - 技能优化
-  - 性能分析
-  - 元技能
-  - 成本优化
+name: SkillPerformanceOptimizer
+description: 技能性能优化专家，负责分析技能执行性能瓶颈（提示词过长、工具调用过多、执行缓慢）、优化提示词结构和工具调用策略、减少 token 消耗和执行时间、提供并行化缓存策略优化方案、计算优化 ROI 和投资回报，适用于性能调优、成本优化、响应速度提升、资源利用率优化场景
 ---
 
 # 技能性能优化器
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能性能优化器 |
-| **英文标识名** | `SkillPerformanceOptimizer` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -602,41 +577,3 @@ skill-performance-optimizer optimize --skill=CodeReviewer --focus=performance
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
 | 1.0.1 | 2026-03-31 | AI Assistant | 扩充性能优化策略引擎、输入输出规范等章节 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.1  
-**状态**: 🟢 稳定
-
-## 🔗 相关资源
-
-### 前置技能
-- [SkillMetrics](../SkillMetrics/SKILL.md) - 技能度量与分析
-- [SkillOrchestrator](../SkillOrchestrator/SKILL.md) - 技能组合编排器
-
-## 📝 更新日志
-
-| 版本 | 日期 | 作者 | 变更内容 |
-|------|------|------|---------|
-| 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

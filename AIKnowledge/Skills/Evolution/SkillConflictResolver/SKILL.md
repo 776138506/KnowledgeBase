@@ -1,34 +1,9 @@
 ---
-name: 技能冲突检测与解决
-identifier: SkillConflictResolver
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 冲突检测
-  - 技能治理
-  - 冲突解决
-  - 元技能
-  - 技能优化
+name: SkillConflictResolver
+description: 技能冲突检测与解决专家，负责检测技能间功能重叠和命名冲突（相似度分析、边界识别）、识别功能重复和职责模糊、提供冲突解决方案（合并、重构、边界澄清）、技能合并和重构建议、避免技能膨胀和资源浪费，适用于技能库治理、技能整合、职责边界明确、技能优化场景
 ---
 
 # 技能冲突检测与解决
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能冲突检测与解决 |
-| **英文标识名** | `SkillConflictResolver` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -360,41 +335,3 @@ skill-conflict-resolver detect --scope=all
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
 | 1.0.1 | 2026-03-31 | AI Assistant | 扩充冲突解决策略引擎等章节 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.1  
-**状态**: 🟢 稳定
-
-## 🔗 相关资源
-
-### 前置技能
-- [SkillEvolution](../SkillEvolution/SKILL.md) - 技能进化与关联
-- [SkillQualityGate](../SkillQualityGate/SKILL.md) - 技能质量门禁
-
-## 📝 更新日志
-
-| 版本 | 日期 | 作者 | 变更内容 |
-|------|------|------|---------|
-| 1.0.0 | 2026-03-31 | AI Assistant | 初始版本 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定

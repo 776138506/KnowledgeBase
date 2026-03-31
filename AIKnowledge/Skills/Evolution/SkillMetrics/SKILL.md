@@ -1,34 +1,9 @@
 ---
-name: 技能度量与分析
-identifier: SkillMetrics
-version: 1.0.0
-type: meta-skill
-status: 🟢 稳定
-created: 2026-03-31
-updated: 2026-03-31
-author: AI Assistant
-tags:
-  - 技能度量
-  - 数据分析
-  - 性能监控
-  - 元技能
-  - 技能优化
+name: SkillMetrics
+description: 技能度量与分析专家，负责追踪技能使用指标（使用频率、执行时长、成功率、用户满意度）、分析技能性能和趋势、检测异常波动和性能下降、生成技能健康报告和可视化仪表板、基于数据驱动提供技能优化建议，适用于技能性能监控、使用分析、趋势预测、健康评估场景
 ---
 
 # 技能度量与分析
-
-## 📋 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| **中文名称** | 技能度量与分析 |
-| **英文标识名** | `SkillMetrics` |
-| **版本号** | 1.0.0 |
-| **类型** | Meta-Skill（元技能） |
-| **状态** | 🟢 稳定 |
-| **创建日期** | 2026-03-31 |
-| **最后更新** | 2026-03-31 |
-| **维护者** | AI Assistant |
 
 ## 🎯 核心目标
 
@@ -715,16 +690,3 @@ skill-metrics analyze --period=last_7_days --output=markdown
 | 版本 | 日期 | 作者 | 变更内容 |
 |------|------|------|---------|
 | 1.0.0 | 2026-03-31 | AI Assistant | 初始版本，包含完整的技能度量与分析能力 |
-
-## 📞 维护信息
-
-**维护者**: AI Assistant  
-**邮箱**: support@example.com  
-**Issue**: [GitHub Issue 链接](https://github.com/776138506/MyKnowledge/issues)
-
----
-
-**创建日期**: 2026-03-31  
-**最后更新**: 2026-03-31  
-**版本**: 1.0.0  
-**状态**: 🟢 稳定
