@@ -1,0 +1,220 @@
+# project-constraint.yaml
+
+# ============================================================
+# AI-First 强约束新式 PRD - 项目全局技术约束
+# ============================================================
+# 
+# 使用说明:
+# 1. 此文件定义项目级别的技术约束，所有功能必须遵循
+# 2. Phase 0 时必须加载此文件
+# 3. 禁止违反此文件中的任何约束
+# 4. 如需修改，必须走变更流程
+#
+# 最后更新: YYYY-MM-DD
+# 维护者: [姓名]
+# ============================================================
+
+# ----------------------------------------------------------
+# 技术栈定义
+# ----------------------------------------------------------
+tech_stack:
+  language: "Python 3.10+"
+  framework: "FastAPI 0.100+"
+  database: "MySQL 8.0 / PostgreSQL 14"
+  orm: "SQLAlchemy 2.0 / Tortoise ORM"
+  cache: "Redis 7.0"
+  queue: "Celery / RabbitMQ"
+  
+dependencies:
+  # 核心依赖（允许使用）
+  core:
+    - "fastapi>=0.100.0"
+    - "sqlalchemy>=2.0.0"
+    - "pydantic>=2.0.0"
+    - "alembic>=1.12.0"
+    
+  # 安全依赖
+  security:
+    - "python-jose[cryptography]>=3.3.0"
+    - "passlib[bcrypt]>=1.7.4"
+    - "python-multipart>=0.0.6"
+    
+  # 工具依赖
+  utils:
+    - "httpx>=0.24.0"
+    - "redis>=4.5.0"
+
+# ----------------------------------------------------------
+# 禁止项（Forbidden）- 绝对不能做的事
+# ----------------------------------------------------------
+forbidden:
+  # 数据安全
+  data_security:
+    - "禁止使用明文存储密码"
+    - "禁止在代码中硬编码密钥、Token、密码"
+    - "禁止将敏感信息写入日志"
+    - "禁止在 SQL 中使用字符串拼接（防注入）"
+    
+  # 架构规范
+  architecture:
+    - "禁止跨层调用（Controller 不能直接操作数据库）"
+    - "禁止循环依赖"
+    - "禁止使用全局可变状态"
+    - "禁止在业务逻辑中直接操作 HTTP 响应"
+    
+  # 编码规范
+  coding:
+    - "禁止使用 print() 调试（用 logging 替代）"
+    - "禁止忽略异常处理（至少要 log）"
+    - "禁止写超过 50 行的函数"
+    - "禁止使用魔法数字（必须定义为常量）"
+    
+  # 测试要求
+  testing:
+    - "禁止提交没有单元测试的代码"
+    - "禁止跳过测试覆盖率检查"
+    - "禁止使用假数据或 mock 真实场景"
+    
+  # 文档要求
+  documentation:
+    - "禁止提交没有 docstring 的公共函数"
+    - "禁止修改已确认的 PRD 文档（走变更流程）"
+    - "禁止删除或修改追溯记录"
+
+# ----------------------------------------------------------
+# 必须遵守的规则（Required）
+# ----------------------------------------------------------
+required:
+
+  # 代码风格
+  code_style:
+    linter: "ruff / flake8 + black"
+    formatter: "black / ruff format"
+    type_checking: "mypy / pyright (strict mode)"
+    
+    naming_conventions:
+      class_name: "PascalCase"
+      function_name: "snake_case"
+      variable_name: "snake_case"
+      constant_name: "UPPER_SNAKE_CASE"
+      private_variable: "_leading_underscore"
+      
+  # API 设计
+  api_design:
+    versioning: "URL path versioning (/api/v1/...)"
+    response_format: "统一响应格式 {code, data, message, error_code}"
+    error_handling: "统一的错误码体系"
+    pagination: "标准分页参数 (page, page_size, total)"
+    authentication: "JWT Bearer Token"
+    
+  # 数据库设计
+  database_design:
+    normalization: "第三范式 (3NF)"
+    indexing: "所有外键和常用查询字段必须有索引"
+    charset: "utf8mb4"
+    collation: "utf8mb4_unicode_ci"
+    soft_delete: "使用 deleted_at 字段而非物理删除"
+    timestamps: "所有表必须有 created_at, updated_at"
+    
+  # 测试标准
+  testing_standards:
+    unit_test_coverage: "≥80%"
+    integration_test_coverage: "≥90%"
+    e2e_test_coverage: "100% (关键路径)"
+    test_framework: "pytest + pytest-asyncio"
+    mocking: "仅 mock 外部依赖，不 mock 业务逻辑"
+
+# ----------------------------------------------------------
+# 推荐做法（Recommended）- 最佳实践
+# ----------------------------------------------------------
+recommended:
+
+  design_patterns:
+    - "Repository Pattern (数据访问层)"
+    - "Dependency Injection (依赖注入)"
+    - "DTO Pattern (数据传输对象)"
+    - "Service Layer Pattern (业务逻辑层)"
+    
+  error_handling:
+    - "使用自定义异常类层次结构"
+    - "异常信息包含 context 和 trace_id"
+    - "区分业务异常和系统异常"
+    - "提供友好的错误消息给用户"
+    
+  performance:
+    - "数据库查询使用分页"
+    - "热点数据使用缓存"
+    - "异步处理耗时任务"
+    - "避免 N+1 查询问题"
+    
+  security:
+    - "所有输入必须校验（Pydantic Model）"
+    - "敏感操作需要二次确认"
+    - "实现 Rate Limiting"
+    - "定期轮换密钥和证书"
+
+# ----------------------------------------------------------
+# 项目特定配置
+# ----------------------------------------------------------
+project_config:
+  
+  # 目录结构约定
+  directory_structure:
+    src/
+      api/: "API 路由层 (Controllers)"
+      services/: "业务逻辑层 (Services)"
+      repositories/: "数据访问层 (Repositories)"
+      models/: "数据模型 (ORM Models)"
+      schemas/: "请求/响应 DTOs (Pydantic)"
+      core/: "核心配置、工具函数"
+      utils/: "通用工具函数"
+    tests/
+      unit/: "单元测试"
+      integration/: "集成测试"
+      e2e/: "端到端测试"
+      
+  # Git 提交规范
+  git_commit_style:
+    type: "Conventional Commits"
+    types:
+      - "feat: 新功能"
+      - "fix: Bug 修复"
+      - "docs: 文档更新"
+      - "style: 代码格式调整"
+      - "refactor: 重构"
+      - "test: 测试相关"
+      - "chore: 构建/工具链"
+      
+  # CI/CD 要求
+  ci_cd:
+    pr_checks:
+      - "Lint 检查通过"
+      - "类型检查通过"
+      - "单元测试通过 (覆盖率 ≥80%)"
+      - "集成测试通过"
+      - "安全扫描通过"
+      
+    deploy_requirements:
+      - "所有测试通过"
+      - "文档更新完成"
+      - "变更日志更新"
+      - "追溯记录完整"
+
+# ----------------------------------------------------------
+# 变更历史
+# ----------------------------------------------------------
+changelog:
+  - version: "1.0.0"
+    date: "YYYY-MM-DD"
+    author: "[姓名]"
+    changes:
+      - "初始化项目约束配置"
+      
+  # 示例：后续变更记录
+  # - version: "1.1.0"
+  #   date: "YYYY-MM-DD"
+  #   author: "[姓名]"
+  #   changes:
+  #     - "新增: 禁止使用同步 I/O"
+  #     - "修改: 提高测试覆盖率要求到 85%"
+  #     - source: "BUG-003: 性能问题根因分析"
